@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+		<div class="background">
+			<div class="h1">
+			<h1>MY WEBPAGE</h1>
+			</div>
+			<div class="nav">
+				<a class="a" href="#">ABOUT ME</a>
+				<a class="b" href="#">EDUCATION</a>
+				<a class="c" href="#">HOBBIES</a>
+				<a class="d" href="#">CONTACT US</a>
+				
+			</div>
+
+
+				</div>
+				<div class="content">
+					
+					<div class="aboutme">
+					<p style="color: orange">	
+					   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello....Guys....<br>
+					   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Im Norgielyn Obligado, I was born on December 20, 1999</p>
+<p style="color: orange"> I am student of Palawan State University taking up BS Informaation Technology</p>
+<p style="color: orange"> I live in Puerto Princesa City, Palawan, Brgy. Bahil, Purok Pinagpala.</p>
+<p style="color: orange" > I am ambatious young woman, because I have alot of ideas about my future.<br>
+	<h2> MY FAMILY </h2>
+	<p style="color: orange"> My family i typically live in Bahile. My mother was a teacher of Daycare in Bahile (Day CareWorker). She is a nice, sweet mother, not strict, very supportive and friendly person. My mother only support my study and my siblings. My father passed away in 2015 because of heart attack. My younger sister (she is 19 years old), my younger brother (he is 14 years old) he also a father now and my youngest brother(he is 14 years old) and me, Im eldest. I have a good relationship to my siblings and my parent. Sometimes there is a little quarrel but I think this is normal and we try to resolve our problem.</p>
+
+					
+					</p>
+			</div>
+
+				<div class="education">
+						<p style="color: orange">Tertiary: PALAWAN STATES UNIVERSITY</p>
+						
+					</div>
+
+
+					<div class="hobbies">
+
+						<h1 style="color: orange"> HOBIES </h1>
+<li style="color: orange">Travel</li>
+<li style="color: orange"> Watching Movie </li>
+<li style="color: orange"> Listening  Music</li>
+<li style="color: orange"> Playing Volleyball</li>
+
+					</div>
+
+					<div class="contactus">
+						<div class="contactusform">
+							Email Address: <strong style="color: blue;">Obligadonorgielyn@gmail.com</strong><br>	
+						Facebook Account: <strong style="color: blue;">Norgielyn Padrones Obligado</strong><br>
+							Phone Number: 09754590321
+
+						</div>
+						
+					</div>
+
+		</div>
+	
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('a').click(function(){
+				
+				var selected = $(this);
+				$('a').removeClass('active');
+				$(selected).addClass('active');
+		
+		});
+		var $a = $('.a'),
+			$b = $('.b'),
+			$c = $('.c'),
+			$d = $('.d'),
+			$aboutme = $('.aboutme'),
+			$education = $('.education'),
+			$hobbies = $('.hobbies'),
+			$contactus = $('.contactus'),
+			$image = $('.image');
+
+			$a.click(function(){
+				$image.fadeIn();
+				$aboutme.fadeIn();
+				$education.fadeOut();
+				$hobbies.fadeOut();
+				$contactus.fadeOut();
+				
+			})
+
+			$b.click(function(){
+				$image.fadeIn();
+				$education.fadeIn();
+				$aboutme.fadeOut();
+				$hobbies.fadeOut();
+				$contactus.fadeOut();
+			})
+			$c.click(function(){
+				$image.fadeIn();
+				$hobbies.fadeIn();
+				$image.fadeIn();
+				$aboutme.fadeOut();
+				$education.fadeOut();
+				$contactus.fadeOut();
+				
+			})
+
+			$d.click(function(){
+				$contactus.fadeIn();
+				$image.fadeOut();
+				$aboutme.fadeOut();
+				$education.fadeOut();
+				$hobbies.fadeOut();
+				
+			});
+			
+			
+
+		});
+
+
+
+
+			
+
+
+	</script>
+
+
+
+</body>
+</html>
